@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f6fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Login styles */
+.login-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(110, 69, 226, 0.7), rgba(136, 211, 206, 0.7)),
+              url('https://img.lovepik.com/photo/20211118/medium/lovepik-working-tools-on-wooden-rustic-background-picture_480017304.jpg') center/cover no-repeat;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.login-input:focus {
+  border-color: #6e45e2;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.login-button {
+  background: #6e45e2;
   color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-button:hover {
+  background: #573ab6;
+  transform: translateY(-2px);
 }
